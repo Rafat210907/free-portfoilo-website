@@ -1,10 +1,11 @@
 import Hero from "../components/Hero";
-//import StatsSection from "../components/StatsSection";
+import StatsSection from "../components/StatsSection";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
+      <StatsSection />
     </>
   );
 };

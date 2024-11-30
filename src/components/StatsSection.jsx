@@ -7,9 +7,8 @@ const Hero = () => {
     Aos.init();
   }, []);
   return (
-    <section >
-      
-      <div className="flex justify-center mt-10 xl:gap-52">
+    <section>
+      <div className="flex justify-center duration-300 mt-10 xl:gap-52 sm:gap-20">
       <div className="text-center">
         <p className="text-green-500 text-5xl xl:text-6xl font-bold">80+</p>
         <p className="text-gray-700 text-xl">Satisfied clients</p>
