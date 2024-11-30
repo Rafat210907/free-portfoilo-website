@@ -148,6 +148,18 @@ body {
   }
 }
 
+@media (min-width: 955px){
+  .hmb{
+    display: none;
+  }
+}
+
+@media (min-width:815px){
+  .hmb{
+    margin-left: 60px;
+  }
+}
+
 .fade-gradient {
   background-image : radial-gradient(circle, #030014, #03001443 70%, #03001443)
 }

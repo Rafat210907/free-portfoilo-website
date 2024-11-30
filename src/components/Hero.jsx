@@ -8,8 +8,9 @@ const Hero = () => {
   }, []);
   return (
     <section >      
-      <div className="flex justify-center sm:mt-10 ml-2">
-        <div className="sm:mt-32">
+       <img src={heroimg} alt="Hero Image" className="bg-green-500 hmb justify-center align-center max-sm:border-2 "/>
+      <div className="flex justify-center ml-2">
+        <div className="lg:mt-28">
          <h1 className="text-green-700 text-2xl mb-2"> Welcome</h1>
           <h1 className="text-6xl text-black mb-6">I have <span className="text-green-600 font-poppins">Creative <br /> Design</span> Experience</h1>
           <p className="text-gray-900 text-xl mb-10">I’m Tanvir, a creative Product Designer. I’ve been helping businesses <br /> to solve their problems with my design for 2 years.</p>
