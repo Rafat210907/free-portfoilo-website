@@ -55,6 +55,9 @@ const Header = () => {
             >
               <NavLink to="/#Testimonial">Testimonial</NavLink>
             </li>
+            <li>
+            <Link to='/' className="px-4 py-4 border-2 border-green-600 hover:border-transparent hover:bg-green-600 rounded-[10px] font-semibold  duration-300 text-white md:hidden">Download CV</Link>
+            </li>
           </ul>
         </nav>
         <div className="max-[888px]:hidden">
