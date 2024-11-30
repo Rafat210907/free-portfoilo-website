@@ -112,14 +112,14 @@ body {
     top: 64.5px;
     right: 0;
     width: 100%;
-    background: #030014;
+    background: white;
     /* transform: translateX(100%); */
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     height: 0;
   }
   .nab{
-    color: white;
+    color: black;
   }
   .himg{
     display: none;
@@ -133,7 +133,7 @@ body {
     height: 50vh;
     right: 0;
     top: 64.5px;
-    background: #030014;
+    background: white;
     color: rgb(175, 12, 12);
     /* transform: translateX(0%); */
     overflow: hidden;
