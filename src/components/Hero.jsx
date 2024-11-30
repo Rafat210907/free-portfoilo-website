@@ -16,9 +16,9 @@ const Hero = () => {
           <p className="text-gray-900 text-xl mb-10">I’m Tanvir, a creative Product Designer. I’ve been helping businesses <br /> to solve their problems with my design for 2 years.</p>
 
         <div className="flex gap-10">
-            <button className="h-16 w-40 border-2 border-green-500 rounded-[12px] pointer bg-green-500 hover:text-black duration-200" 
+            <button className="h-16 w-40 border-2 border-green-500 rounded-[12px] pointer bg-green-500 hover:text-black duration-200 text-xl" 
             onClick={() => setIsOpen(!isOpen)}>Contact Me</button>
-            <button className="text-black text-lg hover:text-green-400 duration-200 pointer">View Portfolio</button>
+            <button className="text-black text-lg hover:text-green-400  pointer hover:border-2 rounded-[10px] duration-600 hover:border-green-400 p-4">View Portfolio</button>
           </div>
         </div>
         <img src={heroimg} alt="Hero Image" className="bg-green-500 himg" />
