@@ -19,7 +19,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <nav>
+        <nav >
           <ul
             className={
               isOpen ? "side-nav" : "nav-links  md:flex gap-x-10 text-[17px]"
@@ -27,7 +27,7 @@ const Header = () => {
           >
             <NavLink to="/#about">
               <li
-                className="text-black duration-300 mt-6 md:mt-0 hover:text-green-400"
+                className="text-black duration-300 mt-6 md:mt-0 hover:text-green-400 nab"
                 onClick={handleClose}
               >
                 About
@@ -36,7 +36,7 @@ const Header = () => {
 
             <NavLink to="/#skills">
               <li
-                className="text-black duration-300 hover:text-green-400"
+                className="text-black duration-300 hover:text-green-400 nab "
                 onClick={handleClose}
               >
                 Skills
@@ -44,13 +44,13 @@ const Header = () => {
             </NavLink>
 
             <li
-              className="text-black duration-300 hover:text-green-400"
+              className="text-black duration-300 hover:text-green-400 nab"
               onClick={handleClose}
             >
               <NavLink to="/#Portfolio">Portfolio</NavLink>
             </li>
             <li
-              className="text-black duration-300 hover:text-green-400"
+              className="text-black duration-300 hover:text-green-400 nab"
               onClick={handleClose}
             >
               <NavLink to="/#Testimonial">Testimonial</NavLink>

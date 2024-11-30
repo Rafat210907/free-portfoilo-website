@@ -15,7 +15,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   color: white;
-  background: #100455;
+  background: white;
 
 }
 
@@ -39,7 +39,7 @@ body {
 .navbar {
   width: 23px;
   height: 1.6px;
-  background: white;
+  background: black;
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
   -webkit-user-select: none;
@@ -51,7 +51,7 @@ body {
   position: absolute;
   width: 23px;
   height: 1.6px;
-  background: white;
+  background: black;
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
   transform: translateY(-7px);
@@ -62,7 +62,7 @@ body {
   position: absolute;
   width: 23px;
   height: 1.6px;
-  background: white;
+  background: black;
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
   transform: translateY(7px);
@@ -83,7 +83,7 @@ body {
   position: absolute;
   width: 23px;
   height: 1.6px;
-  background: white;
+  background: rgb(56, 236, 1);
   border-radius: 3px;
   transition: all 0.4s ease-in-out;
   transform: rotate(-45deg);
@@ -94,12 +94,16 @@ body {
   position: absolute;
   width: 23px;
   height: 1.6px;
-  background: white;
+  background: rgb(56, 236, 1);
   border-radius: 3px;
   transition: all 0.4s ease-in-out;
   transform: rotate(45deg);
 }
-
+@media (max-width: 954px) {
+  .himg{
+    display: none;
+  }
+}
 
 @media (768px >= width) {
   .nav-links {
@@ -114,7 +118,15 @@ body {
     overflow: hidden;
     height: 0;
   }
-
+  .nab{
+    color: white;
+  }
+  .himg{
+    display: none;
+  }
+  .nat {
+    margin-top: 40px;
+  }
   .side-nav {
     position: absolute;
     width: 100%;
@@ -122,7 +134,7 @@ body {
     right: 0;
     top: 64.5px;
     background: #030014;
-    color: white;
+    color: rgb(175, 12, 12);
     /* transform: translateX(0%); */
     overflow: hidden;
     transition: all 0.4s ease-in-out;
