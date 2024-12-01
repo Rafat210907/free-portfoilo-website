@@ -12,7 +12,7 @@ const MySkills = () => {
 
   return (
     <section id='Skills'>
-        <div  className='mt-28 md:flex justify-center ml-2 gap-24'>
+        <div  className='sm:mt-28 max-sm:mt-10 md:flex justify-center ml-2 gap-24'>
             <div>
                 <h1 className='text-green-600 text-2xl'>My Skills</h1>
                 <h2 className='sm:text-5xl text-4xl text-black mt-2'>Why Hire Me For Your <br /> Next <span className='text-green-600'>Project</span>?</h2>
