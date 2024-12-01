@@ -11,7 +11,7 @@ const MySkills = () => {
       }, []);
 
   return (
-    <section >
+    <section id='Skills'>
         <div  className='mt-28 md:flex justify-center ml-2 gap-24'>
             <div>
                 <h1 className='text-green-600 text-2xl'>My Skills</h1>
@@ -41,4 +41,4 @@ const MySkills = () => {
   )
 }
 
-export default MySkills
+export default MySkills;

@@ -2,12 +2,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const Hero = () => {
+const StatsSection = () => {
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <section>
+    <section id="Status">
       <div className="flex justify-center duration-300 mt-10 xl:gap-52 sm:gap-20">
       <div className="text-center">
         <p className="text-green-500 text-5xl xl:text-6xl font-bold">80+</p>
@@ -28,4 +28,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default StatsSection;

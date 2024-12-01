@@ -25,16 +25,16 @@ const Header = () => {
               isOpen ? "side-nav" : "nav-links  md:flex gap-x-10 text-[17px]"
             }
           >
-            <NavLink to="/#about">
+            <NavLink to="/#Home">
               <li
                 className="text-black duration-300 mt-6 md:mt-0 hover:text-green-400 nab"
                 onClick={handleClose}
               >
-                About
+                Home
               </li>
             </NavLink>
 
-            <NavLink to="/#skills">
+            <NavLink to="/#Skills">
               <li
                 className="text-black duration-300 hover:text-green-400 nab "
                 onClick={handleClose}
@@ -47,7 +47,7 @@ const Header = () => {
               className="text-black duration-300 hover:text-green-400 nab"
               onClick={handleClose}
             >
-              <NavLink to="/#Portfolio">Portfolio</NavLink>
+              <NavLink to="/#Status">Portfolio</NavLink>
             </li>
             <li
               className="text-black duration-300 hover:text-green-400 nab"

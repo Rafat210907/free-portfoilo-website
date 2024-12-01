@@ -7,7 +7,7 @@ const Hero = () => {
     Aos.init();
   }, []);
   return (
-    <section >      
+    <section id="Home">      
        <img src={heroimg} alt="Hero Image" className="bg-green-500 hmb justify-center align-center max-sm:border-2 "/>
       <div className="flex justify-center ml-2">
         <div className="lg:mt-28">
