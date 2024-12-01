@@ -53,7 +53,7 @@ const Header = () => {
               className="text-black duration-300 hover:text-green-400 nab"
               onClick={handleClose}
             >
-              <NavLink to="/#Testimonial">Testimonial</NavLink>
+              <NavLink to="/#testimonial">Testimonial</NavLink>
             </li>
             <li>
             <Link to='/' className="px-4 py-4 border-2 border-green-600 hover:border-transparent hover:bg-green-600 rounded-[10px] font-semibold  duration-300 text-black md:hidden">Download CV</Link>

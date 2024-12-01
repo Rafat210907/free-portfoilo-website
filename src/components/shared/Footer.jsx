@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className= "pb-4 relative max-lg:mt-32 mt-14">      
+    <footer className= "pb-4 relative mt-14">      
       <div className="pt-5 border-t border-black/20">
         <p className="text-center text-[13px] text-black">
           Copyright © | Developed By{" "}
