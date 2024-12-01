@@ -1,29 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useState } from "react";
-
-const testimonials = [
-  {
-    name: "Amir Uddin",
-    designation: "UX Designer",
-    rating: 5,
-    content:
-      "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website & help sell products from the company.",
-  },
-  {
-    name: "Salim Ahmed",
-    designation: "UI Designer",
-    rating: 5,
-    content:
-      "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website & help sell products from the company.",
-  },
-  {
-    name: "Guy Hawkins",
-    designation: "UX Designer",
-    rating: 5,
-    content:
-      "We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website & help sell products from the company.",
-  },
-];
+import testimonials from "../testimonials.json"; // Adjust the path based on your project structure
 
 const Testimonials = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "center", loop: false });
@@ -66,6 +43,7 @@ const Testimonials = () => {
                 className="flex-[0_0_90%] md:flex-[0_0_33%] bg-white rounded-lg shadow-lg p-6"
               >
                 <div className="mb-4">
+                  {/* Render Stars */}
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <span key={i} className="text-yellow-500 text-lg">★</span>
                   ))}
