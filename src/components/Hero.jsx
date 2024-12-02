@@ -8,7 +8,7 @@ const Hero = () => {
   }, []);
   return (
     <section id="Home">      
-       <img src={heroimg} alt="Hero Image" className="bg-green-500 hmb justify-center align-center max-sm:border-2 "/>
+       <img src={heroimg} alt="Hero Image" className="bg-green-500 hmb justify-center align-center "/>
       <div className="flex justify-center ml-2">
         <div className="lg:mt-28">
          <h1 className="text-green-700 text-2xl mb-2"> Welcome</h1>

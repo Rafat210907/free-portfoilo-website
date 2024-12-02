@@ -5,7 +5,7 @@ import Header from "../components/shared/Header";
 const Layout = () => {
   return (
     <>
-      <div className="h-20 mb-10">
+      <div className="h-20">
         <Header />
       </div>
       <Outlet />
