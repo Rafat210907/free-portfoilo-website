@@ -1,8 +1,8 @@
 import Hero from "../components/Hero";
 import StatsSection from "../components/StatsSection";
 import MySkills from "../components/MySkills";
-//import Testimonial from "../components/Testimonial";
 import Reviews from "../components/Reviews";
+import ContactUs from "../pages/ContactUsPage";
 const HomePage = () => {
   return (
     <>
@@ -10,6 +10,7 @@ const HomePage = () => {
       <StatsSection />
       <MySkills/>
       <Reviews />
+      <ContactUs/>
     </>
   );
 };

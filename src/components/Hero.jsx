@@ -2,6 +2,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import heroimg from "../assets/img/heroimg.png"
+import { NavLink } from 'react-router-dom';
 const Hero = () => {
   useEffect(() => {
     Aos.init();
@@ -16,7 +17,7 @@ const Hero = () => {
           <p className="text-gray-900 text-xl mb-10">I’m Tanvir, a creative Product Designer. I’ve been helping businesses <br /> to solve their problems with my design for 2 years.</p>
 
         <div className="flex gap-10">
-            <button className="h-14 w-36 border-2 border-green-500 rounded-[12px] pointer bg-green-500 hover:text-black duration-200 text-lg" 
+            <button className="h-14 w-36 border-2 border-green-500 rounded-[12px] pointer bg-green-500 duration-200 text-lg hover:text-white" 
             onClick={() => setIsOpen(!isOpen)}>Contact Me</button>
             <button className="text-black text-lg hover:text-green-400  pointer hover:border-2 rounded-[10px] duration-600 hover:border-green-400 p-4">View Portfolio</button>
           </div>

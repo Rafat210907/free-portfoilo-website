@@ -1,104 +1,49 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import Swal from "sweetalert2";
+import { MdEmail, MdCall, MdLocationOn } from "react-icons/md";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import React, { useRef } from 'react';
 
 const ContactForm = () => {
-  const [result, setResult] = React.useState("");
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-    if (data.success) {
-      Swal.fire({
-        title: "Sucess!",
-        text: "Mail Sent Successfully!",
-        icon: "success",
-      }),
-        event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
-  };
-
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
-    <div className="mx-auto max-w-[800px]">
-      <form data-aos="fade-up" data-aos-duration="1000" onSubmit={onSubmit}>
-        <div className="flex flex-col md:flex-row gap-4 mb-4">
-          <input
-            data-aos="fade-down"
-            data-aos-duration="1400"
-            type="text"
-            className="bg-[#110c2eb3] px-6 py-3 rounded-lg w-full outline-none placeholder:text-dark/90"
-            required
-            placeholder="Full Name"
-            name="name"
-          />
-          <input
-            data-aos="fade-left"
-            data-aos-duration="1200"
-            type="text"
-            className="bg-[#110c2eb3] px-6 py-3 rounded-lg w-full outline-none placeholder:text-dark/90"
-            required
-            placeholder="Email"
-            name="Email"
-          />
+    <section className="flex md:flex-row flex-col gap-20 md:items-center">
+      <div>
+        <h3 className="mb-7 uppercase font-semibold">Contact Info</h3>
+        <div className="flex items-center gap-6 mb-[55px]">
+            <span className="w-16 h-16 rounded-[10px] flex justify-center items-center text-3xl bg-green-500 text-white">
+            <MdEmail/>
+            </span>
+            <span>
+            <p className="text-[14px] text-black/70 uppercase mb-1">Mail Me</p>
+            <a href="mailto:rafatahmed210907@gmail.com" className=" opacity-80 font-semibold text-[14px]">rafatahmed210907@gmail.com</a>
+            </span>
         </div>
-        <div className="flex flex-col md:flex-row gap-4 mb-4">
-          <input
-            data-aos="fade-right"
-            data-aos-duration="1300"
-            type="email"
-            className="bg-[#110c2eb3] px-6 py-3 rounded-lg w-full outline-none placeholder:text-dark/90"
-            required
-            placeholder="Phone Number"
-            name="number"
-          />
-          <input
-            data-aos="fade-left"
-            data-aos-duration="1400"
-            type="number"
-            className="bg-[#110c2eb3] px-6 py-3 rounded-lg w-full outline-none placeholder:text-dark/90"
-            required
-            placeholder="Budget"
-            name="Budget"
-          />
+        <div className="flex items-center gap-6 mb-[55px]">
+            <span className="w-16 h-16 rounded-[10px] flex justify-center items-center text-3xl bg-green-500 text-white">
+            <MdCall/>
+            </span>
+            <span>
+            <p className="text-[14px] text-black/70 uppercase mb-1">Contact Number</p>
+            <a href="tel:+8801761094636" className=" opacity-80 font-semibold text-[14px]">+88 01815589999</a>
+            </span>
         </div>
-       
-        <textarea
-          data-aos="fade-up"
-          data-aos-duration="1400"
-          className="w-full bg-[#110c2eb3] rounded-lg px-5 py-4  mt-4 outline-none resize-none placeholder:text-dark/80"
-          placeholder="Your Message"
-          name="Message"
-          id=""
-          rows="3"
-        ></textarea>
-        <div className="text-center mt-3">
-          <button
-            className="borde border-secondary w-full px-8 py-3 bg-[#110c2eb3] hover:bg-white hover:text-black duration-500 rounded-lg font-semibold uppercase tracking-wider text-sm sm:text-lg"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
+        <div className="flex items-center gap-6 ">
+            <span className="w-16 h-16 rounded-[10px] flex justify-center items-center text-3xl bg-green-500 text-white">
+            <MdLocationOn />
+            </span>
+            <span>
+            <p className="text-[14px] text-black/70 uppercase mb-1">Location</p>
+            <a className="opacity-80 font-semibold text-[14px]">Sylhet, Bangladesh</a>
+            </span>
+        </div>   
+      </div>
+      <form className="shadow-box flex-1  px-5 py-[40px] sm:px-[40px]">
+        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="text" name="user_name" id="name" placeholder="Name *" required/>
+        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="email" name="user_email" id="email" placeholder="Email *" required/>
+        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="text" name="subject" id="subject" placeholder="Your Subject *" required/>
+        <textarea className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3 resize-none" name="message" id="message" cols="10" rows="6" placeholder="Your Message *"></textarea>
+        <button className="w-full relative z-20  text-sm text-white input-bg border-none px-5 py-4 rounded-[10px] mb-2 hover:bg-white hover:text-black duration-300" type="submit">Send Message</button>
       </form>
-      <span>{result}</span>
-    </div>
+    </section>
   );
 };
 

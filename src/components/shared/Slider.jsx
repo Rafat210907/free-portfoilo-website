@@ -36,7 +36,7 @@ const Testimonials = () => {
       <div className="relative xl:ml-56 mx-auto">
         {/* Embla Carousel */}
         <div className="overflow-hidden" ref={emblaRef}>
-          <div className="flex gap-10">
+          <div className="flex md:gap-10">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
