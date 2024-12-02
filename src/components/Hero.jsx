@@ -2,7 +2,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import heroimg from "../assets/img/heroimg.png"
-import { NavLink } from 'react-router-dom';
 const Hero = () => {
   useEffect(() => {
     Aos.init();

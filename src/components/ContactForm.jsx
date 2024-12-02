@@ -1,12 +1,10 @@
 import { MdEmail, MdCall, MdLocationOn } from "react-icons/md";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
 import React, { useRef } from 'react';
 
 const ContactForm = () => {
   return (
     <section className="flex md:flex-row flex-col gap-20 md:items-center">
-      <div>
+      <div className="md:mb-28">
         <h3 className="mb-7 uppercase font-semibold">Contact Info</h3>
         <div className="flex items-center gap-6 mb-[55px]">
             <span className="w-16 h-16 rounded-[10px] flex justify-center items-center text-3xl bg-green-500 text-white">
@@ -37,11 +35,11 @@ const ContactForm = () => {
         </div>   
       </div>
       <form className="shadow-box flex-1  px-5 py-[40px] sm:px-[40px]">
-        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="text" name="user_name" id="name" placeholder="Name *" required/>
-        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="email" name="user_email" id="email" placeholder="Email *" required/>
-        <input className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3" type="text" name="subject" id="subject" placeholder="Your Subject *" required/>
-        <textarea className="w-full relative z-20  text-sm text-white input-bg border-2 px-5 py-4 rounded-[10px] mb-3 resize-none" name="message" id="message" cols="10" rows="6" placeholder="Your Message *"></textarea>
-        <button className="w-full relative z-20  text-sm text-white input-bg border-none px-5 py-4 rounded-[10px] mb-2 hover:bg-white hover:text-black duration-300" type="submit">Send Message</button>
+        <input className="w-full relative z-20  text-sm input-bg border-2 px-5 py-4 rounded-[10px] mb-3 hover:border-green-400" type="text" name="user_name" id="name" placeholder="Name *" required/>
+        <input className="w-full relative z-20  text-sm  input-bg border-2 px-5 py-4 rounded-[10px] mb-3 hover:border-green-400" type="email" name="user_email" id="email" placeholder="Email *" required/>
+        <input className="w-full relative z-20  text-sm e input-bg border-2 px-5 py-4 rounded-[10px] mb-3 hover:border-green-400" type="text" name="subject" id="subject" placeholder="Your Subject *" required/>
+        <textarea className="w-full relative z-20  text-sm  input-bg border-2 px-5 py-4 rounded-[10px] mb-3 resize-none hover:border-green-400" name="message" id="message" cols="10" rows="6" placeholder="Your Message *"></textarea>
+        <button className="w-full relative z-20  text-sm input-bg border-2 hover:border-green-300 px-5 py-4 rounded-[10px] mb-2 hover:text-green-800 duration-300" type="submit">Send Message</button>
       </form>
     </section>
   );

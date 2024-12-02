@@ -18,7 +18,6 @@ const Header = () => {
             </h1>
           </div>
         </Link>
-
         <nav >
           <ul
             className={
