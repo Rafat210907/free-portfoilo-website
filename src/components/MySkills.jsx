@@ -17,7 +17,7 @@ const MySkills = () => {
                 <h1 className='text-green-600 text-2xl'>My Skills</h1>
                 <h2 className='sm:text-5xl text-4xl text-black mt-2'>Why Hire Me For Your <br /> Next <span className='text-green-600'>Project</span>?</h2>
                 <p className='text-black/70 text-lg mt-8'>I’m specialist in UI/UX Designe. My passion is designing & solving <br /> problems through user experience and research.</p>
-                <button className="h-14 w-36 border-2 border-green-500 rounded-[12px] pointer bg-green-500 hover:text-black duration-200 text-lg mt-6" 
+                <button className="h-14 w-36 border-2 rounded-[12px] pointer bg-green-500 hover:text-white duration-200 text-lg mt-6" 
             onClick={() => setIsOpen(!isOpen)}>Hire Me</button>
             </div>
             <div className='xl:flex max-md:mt-10 gap-16 sm:ml-28 duration-300'>
